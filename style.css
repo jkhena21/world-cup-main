@@ -83,6 +83,9 @@ main{
     margin-left: 20px;
     margin-right: 20px;
 }
+.style1{
+    margin-left: 30px;
+}
 .style1:hover{
     background-color: #DD0000;
     color: #FFFFFF;
@@ -91,7 +94,7 @@ main{
     background-color: #DD0000;
     color: #FFFFFF;
 }
-
+    
 /* blogs styles */
 .blogs{
     display: grid;
@@ -119,6 +122,41 @@ main{
 }
 .blog-comment{
     padding-right: 100px;
+}
+
+/* matches styles */
+.matches{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.match{
+    border: 1px solid wheat;
+    border-radius: 10px;
+}
+.match-banner{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+.match .match-banner img{
+    width: 75px;
+    height: 50px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.style5{
+    padding-top: 40px;
+    font-weight: 700;
+}
+.match-detail{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.match-detail p{
+    font-size: 15px;
+    color: rgb(59, 58, 58);
 }
 
 /* footer styles */
