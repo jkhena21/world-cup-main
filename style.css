@@ -13,13 +13,12 @@ main{
 }
 
 /* banner section styles */
-
 .container{
     background-color: #161616;
     width: 980px;
     height: 400px;
-    left: 140px;
-    top: 50px;
+    /* left: 140px; */
+    /* top: 50px; */
     border-radius: 30px;
     margin-top: 30px;
     margin-bottom: 100px;
@@ -35,7 +34,7 @@ main{
     color: #FFFFFF;
     font-size: 55px;
     font-weight: 900;
-    line-height: 80px;
+    /* line-height: 80px; */
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -57,17 +56,102 @@ main{
 }
 
 /* blog section styles */
+.blog-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* blog button styles */
+.blog-button{
+    background-color: #161616;
+    height: 220px;
+    width: 250px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+}
+.button{
+    background-color: #FFFFFF;
+    padding: 10px 30px;
+    color: #161616;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.style1:hover{
+    background-color: #DD0000;
+    color: #FFFFFF;
+}
+.style2{
+    background-color: #DD0000;
+    color: #FFFFFF;
+}
+
+/* blogs styles */
 .blogs{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 24px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.blog{
+    border: 1px solid wheat;
+    border-radius: 10px;
 }
 .blog .blog-banner img{
-    width: 300px;
-    height: 180px;
+    width: 245px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+.blog-detail{
+    padding-left: 10px;
+    padding-bottom: 15px;
 }
 .blog-info{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.blog-comment{
+    padding-right: 100px;
+}
+
+/* footer styles */
+.footer-bottom{
+    background-color: #161616;
+    height: 400px;
+    margin-top: 100px;
+    text-align: center;
+}
+.footer-bottom h4{
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: 400;
+    padding-top: 100px;
+}
+span{
+    display: flex;
+    justify-content: space-evenly;
+}
+span a{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+span i{
+    color: #FFFFFF;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+.footer-bottom .social-icon{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
