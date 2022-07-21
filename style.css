@@ -201,7 +201,7 @@ span i{
     .banner, .banner img{
         grid-template-rows: repeat(1,1fr);
     }
-    .blog-button, .blogs, .footer-bottom{
+    .blog-button, .blogs, .matches, .footer-bottom{
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -214,10 +214,11 @@ span i{
     .blog-button{
         grid-template-columns: repeat(1, 1fr);
     }
-    .blogs{
+    .blogs, .matches{
         grid-template-columns: repeat(2, 1fr);
     }
     .footer-bottom{
+        width: 100%;
         grid-template-columns: repeat(1, 1fr);
     }
 }
