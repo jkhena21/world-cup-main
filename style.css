@@ -17,8 +17,6 @@ main{
     background-color: #161616;
     width: 980px;
     height: 400px;
-    /* left: 140px; */
-    /* top: 50px; */
     border-radius: 30px;
     margin-top: 30px;
     margin-bottom: 100px;
@@ -34,7 +32,6 @@ main{
     color: #FFFFFF;
     font-size: 55px;
     font-weight: 900;
-    /* line-height: 80px; */
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -193,3 +190,37 @@ span i{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
+
+/*------Media Queries------*/
+
+/* Mobile Device */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .container{
+        width: 100%;
+    }
+    .banner, .banner img{
+        grid-template-rows: repeat(1,1fr);
+    }
+    .blog-button, .blogs, .footer-bottom{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .blog-button{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-bottom{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
